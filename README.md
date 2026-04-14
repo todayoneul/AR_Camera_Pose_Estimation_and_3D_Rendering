@@ -22,7 +22,7 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 풀영상 재생:
 
-<video controls src="IMG_0230.MOV" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/IMG_0230.MOV" width="100%"></video>
 
 ### Cube AR 데모
 
@@ -34,7 +34,7 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 풀영상 재생:
 
-<video controls src="cube.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/cube.mp4" width="100%"></video>
 
 ### Public Bench (Public Chair) AR 데모
 
@@ -46,17 +46,17 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 풀영상 재생:
 
-<video controls src="publicBench.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/publicBench.mp4" width="100%"></video>
 
 ### 추가 데모
 
 비교 영상 재생:
 
-<video controls src="output/compare_test.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/output/compare_test.mp4" width="100%"></video>
 
 안정화 테스트 영상 재생:
 
-<video controls src="output/final_test_noblock.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/output/final_test_noblock.mp4" width="100%"></video>
 
 ## 프로젝트 구조
 
