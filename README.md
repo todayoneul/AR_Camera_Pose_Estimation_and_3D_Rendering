@@ -16,7 +16,7 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 ### 입력 원본 영상
 
-[![입력 원본 GIF](media/previews/original_preview.gif)](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/input/IMG_0230.MOV)
+[![입력 원본 GIF](media/previews/original_preview.gif)](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/input/IMG_0230.MOV)
 
 원본 프레임:
 
@@ -24,11 +24,11 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 풀영상 재생:
 
-**[입력 원본 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/input/IMG_0230.MOV)**
+**[입력 원본 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/input/IMG_0230.MOV)**
 
 ### Cube AR 데모
 
-[![Cube AR GIF](media/previews/cube_preview.gif)](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/output/cube.mp4)
+[![Cube AR GIF](media/previews/cube_preview.gif)](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/output/cube.mp4)
 
 정지 프레임:
 
@@ -36,11 +36,11 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 풀영상 재생:
 
-**[Cube AR 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/output/cube.mp4)**
+**[Cube AR 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/output/cube.mp4)**
 
 ### Public Bench (Public Chair) AR 데모
 
-[![Public Bench AR GIF](media/previews/publicbench_preview.gif)](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/output/publicBench.mp4)
+[![Public Bench AR GIF](media/previews/publicbench_preview.gif)](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/output/publicBench.mp4)
 
 정지 프레임:
 
@@ -48,17 +48,17 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 풀영상 재생:
 
-**[Public Bench AR 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/output/publicBench.mp4)**
+**[Public Bench AR 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/output/publicBench.mp4)**
 
 ### 추가 데모
 
 비교 영상 재생:
 
-**[비교 테스트 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/output/compare_test.mp4)**
+**[비교 테스트 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/output/compare_test.mp4)**
 
 안정화 테스트 영상 재생:
 
-**[안정화 테스트 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/blob/main/media/output/final_test_noblock.mp4)**
+**[안정화 테스트 풀영상](https://github.com/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/raw/main/media/output/final_test_noblock.mp4)**
 
 ## 프로젝트 구조
 
