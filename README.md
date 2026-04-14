@@ -12,51 +12,53 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 ## 데모 미리보기
 
+참고: GitHub 웹 UI/브라우저 정책에 따라 `<video>` 태그가 간헐적으로 표시되지 않을 수 있습니다. 이 경우 저장소를 새로고침하거나 Raw 링크로 열면 재생되는 경우가 많습니다.
+
 ### 입력 원본 영상
 
-![입력 원본 GIF](output/readme_assets/original_preview.gif)
+![입력 원본 GIF](media/previews/original_preview.gif)
 
 원본 프레임:
 
-![원본 프레임](output/readme_assets/original_frame.jpg)
+![원본 프레임](media/previews/original_frame.jpg)
 
 풀영상 재생:
 
-<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/IMG_0230.MOV" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/media/input/IMG_0230.MOV" width="100%"></video>
 
 ### Cube AR 데모
 
-![Cube AR GIF](output/readme_assets/cube_preview.gif)
+![Cube AR GIF](media/previews/cube_preview.gif)
 
 정지 프레임:
 
-![Cube 프레임](output/readme_assets/cube_frame.jpg)
+![Cube 프레임](media/previews/cube_frame.jpg)
 
 풀영상 재생:
 
-<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/cube.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/media/output/cube.mp4" width="100%"></video>
 
 ### Public Bench (Public Chair) AR 데모
 
-![Public Bench AR GIF](output/readme_assets/publicbench_preview.gif)
+![Public Bench AR GIF](media/previews/publicbench_preview.gif)
 
 정지 프레임:
 
-![Public Bench 프레임](output/readme_assets/publicbench_frame.jpg)
+![Public Bench 프레임](media/previews/publicbench_frame.jpg)
 
 풀영상 재생:
 
-<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/publicBench.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/media/output/publicBench.mp4" width="100%"></video>
 
 ### 추가 데모
 
 비교 영상 재생:
 
-<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/output/compare_test.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/media/output/compare_test.mp4" width="100%"></video>
 
 안정화 테스트 영상 재생:
 
-<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/output/final_test_noblock.mp4" width="100%"></video>
+<video controls src="https://media.githubusercontent.com/media/todayoneul/AR_Camera_Pose_Estimation_and_3D_Rendering/main/media/output/final_test_noblock.mp4" width="100%"></video>
 
 ## 프로젝트 구조
 
@@ -66,14 +68,20 @@ calibration_and_AR/
 ├─ camera_calibration.py              # 카메라 캘리브레이션
 ├─ distortion_correction.py           # 왜곡 보정(이미지/영상/실시간)
 ├─ calibration_result.json            # 캘리브레이션 결과(JSON)
-├─ cube.obj                           # 경량 데모 모델
-├─ publicBench.obj                    # 벤치(의자) 데모 모델
-├─ cube.mp4                           # Cube AR 출력 영상
-├─ publicBench.mp4                    # Bench AR 출력 영상
-├─ output/
-│  ├─ compare_test.mp4
-│  ├─ final_test_noblock.mp4
-│  └─ readme_assets/
+├─ assets/
+│  └─ models/
+│     ├─ cube.obj                     # 경량 데모 모델
+│     └─ publicBench.obj              # 벤치(의자) 데모 모델
+├─ media/
+│  ├─ input/
+│  │  ├─ IMG_0229.MOV
+│  │  └─ IMG_0230.MOV
+│  ├─ output/
+│  │  ├─ cube.mp4
+│  │  ├─ publicBench.mp4
+│  │  ├─ compare_test.mp4
+│  │  └─ final_test_noblock.mp4
+│  └─ previews/
 │     ├─ original_preview.gif
 │     ├─ cube_preview.gif
 │     ├─ publicbench_preview.gif
@@ -96,32 +104,32 @@ pip install -r requirements_pose_ar.txt
 
 ~~~bash
 python pose_estimation_chessboard.py \
-  --input IMG_0230.MOV \
+  --input media/input/IMG_0230.MOV \
   --calibration calibration_result.json \
   --board-size 11,7 \
   --square-size 0.024 \
   --box-origin 4,2 \
-  --obj cube.obj \
+  --obj assets/models/cube.obj \
   --obj-scale 0.05 \
   --solid \
-  --output cube.mp4
+  --output media/output/cube.mp4
 ~~~
 
 ### 3) Public Bench AR 렌더링
 
 ~~~bash
 python pose_estimation_chessboard.py \
-  --input IMG_0230.MOV \
+  --input media/input/IMG_0230.MOV \
   --calibration calibration_result.json \
   --board-size 11,7 \
   --square-size 0.024 \
   --box-origin 4,2 \
-  --obj publicBench.obj \
+  --obj assets/models/publicBench.obj \
   --obj-scale 0.05 \
   --obj-rx -90 \
   --flip-x \
   --solid \
-  --output publicBench.mp4
+  --output media/output/publicBench.mp4
 ~~~
 
 ## 구현된 기능
@@ -196,7 +204,7 @@ python pose_estimation_chessboard.py \
 python camera_calibration.py --list-cameras
 
 # 영상으로 캘리브레이션
-python camera_calibration.py IMG_0230.MOV \
+python camera_calibration.py media/input/IMG_0230.MOV \
   --board-size 11,7 \
   --square-size 24.0 \
   --frame-interval 15 \
@@ -216,15 +224,15 @@ python camera_calibration.py 0 \
 ~~~bash
 # 영상 왜곡 보정
 python distortion_correction.py calibration_result.json \
-  --input IMG_0230.MOV \
-  --output output \
+  --input media/input/IMG_0230.MOV \
+  --output media/output \
   --alpha 0.6 \
   --strength 0.92
 
 # 이미지 왜곡 보정
 python distortion_correction.py calibration_result.json \
   --input sample.jpg \
-  --output output
+  --output media/output
 
 # 실시간 미리보기
 python distortion_correction.py calibration_result.json --live --camera 0
@@ -234,18 +242,18 @@ python distortion_correction.py calibration_result.json --live --camera 0
 
 ~~~bash
 python pose_estimation_chessboard.py \
-  --input IMG_0230.MOV \
+  --input media/input/IMG_0230.MOV \
   --calibration calibration_result.json \
   --board-size 11,7 \
   --square-size 0.024 \
   --box-origin 4,2 \
-  --obj publicBench.obj \
+  --obj assets/models/publicBench.obj \
   --obj-scale 0.05 \
   --obj-rx -90 \
   --flip-x \
   --solid \
   --compare-view \
-  --output output/compare_test.mp4
+  --output media/output/compare_test.mp4
 ~~~
 
 ## 주요 CLI 옵션 요약 (pose_estimation_chessboard.py)
@@ -335,12 +343,12 @@ python pose_estimation_chessboard.py \
 
 ~~~bash
 python pose_estimation_chessboard.py \
-  --input IMG_0230.MOV \
+  --input media/input/IMG_0230.MOV \
   --calibration calibration_result.json \
   --board-size 11,7 \
   --square-size 0.024 \
   --box-origin 4,2 \
-  --obj publicBench.obj \
+  --obj assets/models/publicBench.obj \
   --obj-scale 0.05 \
   --obj-rx -90 \
   --flip-x \
@@ -351,7 +359,7 @@ python pose_estimation_chessboard.py \
   --hold-frames 12 \
   --max-angle-jump 35 \
   --max-trans-jump 0.35 \
-  --output publicBench.mp4
+  --output media/output/publicBench.mp4
 ~~~
 
 ## 성능 및 한계
