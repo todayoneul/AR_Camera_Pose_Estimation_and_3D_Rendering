@@ -16,8 +16,9 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 ![입력 원본 GIF](output/readme_assets/original_preview.gif)
 
-- 원본 영상: [IMG_0230.MOV](IMG_0230.MOV)
-- 원본 프레임: ![원본 프레임](output/readme_assets/original_frame.jpg)
+원본 프레임:
+
+![원본 프레임](output/readme_assets/original_frame.jpg)
 
 풀영상 재생:
 
@@ -27,8 +28,9 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 ![Cube AR GIF](output/readme_assets/cube_preview.gif)
 
-- 데모 영상: [cube.mp4 (media-assets)](https://github.com/todayoneul/AR-Camera-Pose-Estimation-and-3D-Rendering/blob/media-assets/cube.mp4)
-- 정지 프레임: ![Cube 프레임](output/readme_assets/cube_frame.jpg)
+정지 프레임:
+
+![Cube 프레임](output/readme_assets/cube_frame.jpg)
 
 풀영상 재생:
 
@@ -38,17 +40,15 @@ OpenCV와 NumPy만으로 다음 파이프라인을 통합 구현한 프로젝트
 
 ![Public Bench AR GIF](output/readme_assets/publicbench_preview.gif)
 
-- 데모 영상: [publicBench.mp4 (media-assets)](https://github.com/todayoneul/AR-Camera-Pose-Estimation-and-3D-Rendering/blob/media-assets/publicBench.mp4)
-- 정지 프레임: ![Public Bench 프레임](output/readme_assets/publicbench_frame.jpg)
+정지 프레임:
+
+![Public Bench 프레임](output/readme_assets/publicbench_frame.jpg)
 
 풀영상 재생:
 
 <video controls src="https://raw.githubusercontent.com/todayoneul/AR-Camera-Pose-Estimation-and-3D-Rendering/media-assets/publicBench.mp4" width="100%"></video>
 
 ### 추가 데모
-
-- 비교 영상(좌: 원본, 우: AR): [compare_test.mp4 (media-assets)](https://github.com/todayoneul/AR-Camera-Pose-Estimation-and-3D-Rendering/blob/media-assets/output/compare_test.mp4)
-- 안정화 테스트 영상: [final_test_noblock.mp4 (media-assets)](https://github.com/todayoneul/AR-Camera-Pose-Estimation-and-3D-Rendering/blob/media-assets/output/final_test_noblock.mp4)
 
 비교 영상 재생:
 
